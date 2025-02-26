@@ -1,0 +1,210 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    margin-top: 0px;
+    border-radius: 20px; /* Adjust for more curve */
+   
+}
+
+
+/* Project Cards */
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
+#home{
+    background-color: #cfbebe;
+}
+#about{
+    background-color: aliceblue;
+}
+h1{
+    font-size: 50px;
+}
+#abouttext{
+   
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* Contact Form Styling */
+#contact {
+    background: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #575757;
+}
+
+/* Common Styling for Both Projects & Experience Sections */
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Common Section Styling */
+#experience, #projects {
+    padding: 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox for Wide Layout */
+#experience, #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Styling */
+.experience-card, .project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    width: 80%; /* Ensures the cards are wide */
+    max-width: 800px; /* Limits width for better readability */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Pop-Up */
+.experience-card:hover, .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Text and List Styling */
+.experience-card h3, .project-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-card h4 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.experience-card ul, .project-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
