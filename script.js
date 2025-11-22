@@ -1,10 +1,21 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+// Highlight active section on scroll
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const top = window.scrollY;
+        if (top >= section.offsetTop - 150) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(li => {
+        li.classList.remove("active");
+        if (li.getAttribute("href").includes(current)) {
+            li.classList.add("active");
+        }
     });
 });
