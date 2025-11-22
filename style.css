@@ -1,128 +1,103 @@
-* {
+/* ==========================
+   GENERAL STYLES
+========================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    background: #f5f7fa;
+    color: #333;
 }
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f4f9;
-    color: #222;
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
 }
 
-/* Navigation */
-.navbar {
-    width: 100%;
-    background: white;
-    padding: 15px 40px;
+/* ==========================
+   HEADER + PROFILE PHOTO
+========================== */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.logo span {
-    color: #6C63FF;
+.header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #222;
 }
 
-.nav-links li {
-    display: inline-block;
-    margin-left: 25px;
-}
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-.nav-links a:hover {
-    color: #6C63FF;
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Sections */
-.section {
-    padding: 100px 60px;
-    text-align: center;
-}
-
-/* Home */
-.home {
-    background: linear-gradient(to right, #6C63FF, #836FFF);
-    color: white;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.home-content h1 {
-    font-size: 46px;
-}
-.home-content span {
-    color: #FFD369;
-}
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #FFD369;
-    color: black;
-    border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Cards */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.project-card, .experience-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    text-align: left;
-}
-.project-card h3, .experience-card h3 {
-    margin-bottom: 10px;
-    color: #6C63FF;
-}
-.project-card li, .experience-card li {
-    margin-bottom: 7px;
-}
-
-/* Contact */
-.contact form {
-    width: 60%;
-    margin: auto;
-}
-.contact input, .contact textarea {
+.profile-photo img {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #aaa;
-}
-.social-links a {
-    margin: 0 10px;
-    color: #6C63FF;
-    font-weight: bold;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Footer */
-footer {
-    padding: 20px;
-    background: #222;
-    color: white;
+/* ==========================
+   SECTION STYLES
+========================== */
+.section-title {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+.content-card {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* ==========================
+   LIST / HIGHLIGHTS
+========================== */
+.highlights ul {
+    padding-left: 20px;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* ==========================
+   SKILL TAGS
+========================== */
+.skills-list span {
+    display: inline-block;
+    background: #e8f1ff;
+    color: #003366;
+    padding: 7px 14px;
+    border-radius: 20px;
+    margin: 5px 5px 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
     text-align: center;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+    padding-bottom: 20px;
 }
