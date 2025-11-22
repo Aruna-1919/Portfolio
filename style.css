@@ -63,6 +63,9 @@ body {
     border-radius: 8px;
     margin-top: 15px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+    /* Animation added */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /* ==========================
@@ -100,4 +103,20 @@ body {
     color: #666;
     font-size: 14px;
     padding-bottom: 20px;
+}
+
+/* ====================================================
+   🔹 NEW — CARD POP-UP EFFECT (Hover / Touch Popup)
+==================================================== */
+.content-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Touch popup effect for mobile */
+@media (hover: none) {
+    .content-card:active {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
 }
