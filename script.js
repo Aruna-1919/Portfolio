@@ -1,21 +1,19 @@
-// Highlight active section on scroll
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-        const top = window.scrollY;
-        if (top >= section.offsetTop - 150) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(li => {
-        li.classList.remove("active");
-        if (li.getAttribute("href").includes(current)) {
-            li.classList.add("active");
-        }
+// Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
     });
 });
+
+// Mobile menu toggle (only if a menu exists)
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+
+if (menuBtn) {
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+}
