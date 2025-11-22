@@ -3,10 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Aruna Bharathi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fa;
+        }
+
+        header {
+            background: #0a3d62;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd32a;
+        }
+
+        /* PHOTO */
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            right: 40px;
+            top: 120px;
+            border: 4px solid #0a3d62;
+        }
+
+        section {
+            padding: 60px 80px;
+        }
+
+        h1, h2 {
+            color: #0a3d62;
+        }
+
+        .project-card, .experience-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form input, form textarea {
+            width: 60%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            display: block;
+        }
+
+        form button {
+            margin-top: 15px;
+            background: #0a3d62;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #resumeLink {
+            background: #0a3d62;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #0a3d62;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffd32a;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
+
     <!-- Navigation Bar -->
     <header>
         <nav>
@@ -23,40 +127,48 @@
     <!-- Home Section -->
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Aruna Bharathi Jadam, student of VR Siddhartha Engineering College.</p>
+        <p>Hello! I'm <b>Aruna Bharathi Jadam</b>, student of VR Siddhartha Engineering College and an AI-driven full stack developer.</p>
+
+        <!-- Your Photo -->
+        <img src="your-photo.jpg" class="profile-pic" alt="Profile Photo">
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h1>About Me</h1>
-        <p id="abouttext">
-            I am an AI enthusiast and self-driven learner, passionate about acquiring new skills and staying at the forefront of technology. 
-            Proficient in Python, Java, and C, I also have expertise in MySQL, Power BI, Machine Learning, Web Development, and Android Development.
-
-            In a recent academic project, I implemented a disease prediction system using convolutional neural networks (CNNs) and integrated it with a mobile application to enhance the user experience, leveraging ChatGPT for assistance. Additionally, I actively participate in hackathons such as Centuriton, ML Hackathon, and Smart India Hackathon (SIH), which have significantly strengthened my problem-solving and technical skills.
-            
-            I am currently seeking a challenging AI project to further expand my expertise and contribute innovative solutions to real-world problems.
+        <p>
+            I am an AI enthusiast and self-driven learner, passionate about technology and innovation.  
+            Skilled in Python, Java, Angular, Spring Boot, and Machine Learning.  
+            I actively participate in hackathons like Centuriton, ML Hackathon, and SIH, which shaped my problem-solving mindset.
         </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-    
+
         <div class="project-card">
-            <h3>Deepfake Detection Using EfficientNetB0 and LSTM</h3>
+            <h3>Movie Booking System — Angular + Spring Boot + MySQL</h3>
             <ul>
-                <li>Developed an ML model combining EfficientNet and LSTM for deepfake detection, achieving 99.94% accuracy on a test dataset of 10,000+ video frames.</li>
-                <li>Utilized Python, TensorFlow, NumPy, and Pandas for data processing, model training, and evaluation.</li>
+                <li>Built a full-stack movie ticket booking application.</li>
+                <li>Implemented Spring Security with role-based access (User/Admin).</li>
+                <li>Designed movie listing, seat selection, booking history, admin CRUD.</li>
             </ul>
         </div>
-    
+
+        <div class="project-card">
+            <h3>Deepfake Detection Using EfficientNetB0 + LSTM</h3>
+            <ul>
+                <li>Achieved 99.94% accuracy on 10,000+ video frames.</li>
+                <li>Used Python, TensorFlow, NumPy, Pandas.</li>
+            </ul>
+        </div>
+
         <div class="project-card">
             <h3>Crop Disease Detection Using ResNet</h3>
             <ul>
-                <li>Developed a deep learning model using ResNet to classify crop diseases from 50,000+ agricultural images.</li>
-                <li>Applied image augmentation to improve model accuracy and reduce overfitting.</li>
-                <li>Used Python, TensorFlow, and Keras to train and evaluate the model.</li>
+                <li>Trained on 50,000+ agricultural images.</li>
+                <li>Used Keras & TensorFlow.</li>
             </ul>
         </div>
     </section>
@@ -67,67 +179,61 @@
 
         <div class="experience-card">
             <h3>Technology Trainee — Java Full Stack & Agentic AI</h3>
-            <h4>LTIMindtree | January 2025 - Present</h4>
+            <h4>LTIMindtree | January 2025 – Present</h4>
             <ul>
-                <li>Completed training in Java Full Stack including Core Java, JavaScript, TypeScript, Angular, and Spring Boot.</li>
-                <li>Worked on Python for Agentic AI, developing intelligent automation workflows and AI-driven applications.</li>
-                <li>Implemented authentication, authorization, and session management using Spring Security with role-based access.</li>
-                <li>Developed and integrated RESTful APIs using Spring Boot, improving backend modularity and scalability.</li>
+                <li>Trained in Core Java, JS, TypeScript, Angular, Spring Boot.</li>
+                <li>Built agentic AI workflows using Python.</li>
+                <li>Implemented Spring Security & REST APIs.</li>
             </ul>
         </div>
 
         <div class="experience-card">
             <h3>Full Stack Web Development Intern</h3>
-            <h4>INNOVATE INTERN | January 2025 - April 2025</h4>
+            <h4>INNOVATE INTERN | Jan 2025 – Apr 2025</h4>
             <ul>
-                <li>Developed a role-based academic portal using Flask with dashboards for Students, Faculty, and Admin.</li>
-                <li>Built announcement modules, task management, and event scheduling features using HTML5, Bootstrap, and MySQL.</li>
-                <li>Enhanced UI/UX with responsive layouts and clean design structures.</li>
+                <li>Developed dashboards for Students, Faculty, Admin using Flask.</li>
+                <li>Designed announcements & event modules using Bootstrap + MySQL.</li>
             </ul>
         </div>
 
         <div class="experience-card">
             <h3>Amazon ML Summer School</h3>
-            <h4>Amazon | July 2024 - August 2024</h4>
+            <h4>Amazon | July – Aug 2024</h4>
             <ul>
-                <li>Worked on supervised, unsupervised, and advanced ML algorithms using Python.</li>
-                <li>Completed multiple ML projects with accuracy scores above 95%.</li>
-                <li>Collaborated with peers to implement ML models and optimize workflows.</li>
+                <li>Hands-on ML algorithms and model optimization.</li>
             </ul>
         </div>
 
         <div class="experience-card">
-            <h3>Salesforce Developer Virtual Intern</h3>
-            <h4>Salesforce | November 2023 - January 2024</h4>
+            <h3>Salesforce Developer Intern</h3>
+            <h4>Nov 2023 – Jan 2024</h4>
             <ul>
-                <li>Worked with Salesforce CRM for account management and process automation.</li>
-                <li>Built Apex classes and Visualforce pages for custom Salesforce applications.</li>
-                <li>Created detailed reports and dashboards for business analysis.</li>
+                <li>Worked on Apex, Visualforce, CRM automation.</li>
             </ul>
         </div>
 
         <div class="experience-card">
             <h3>Artificial Intelligence Intern</h3>
-            <h4>IBM SkillBuild | June 2023 - August 2023</h4>
+            <h4>IBM SkillBuild | June – Aug 2023</h4>
             <ul>
-                <li>Developed an AI-based Mental Fitness Tracker using machine learning techniques.</li>
-                <li>Gained a strong understanding of AI workflows, data preprocessing, and model training.</li>
+                <li>Developed an AI-based Mental Fitness Tracker.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Contact Me Section -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
+
         <form action="https://formspree.io/f/mjkgqddb" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Resume Section -->
+    <!-- Resume -->
     <section id="resume">
         <h2>My Resume</h2>
         <a href="https://drive.google.com/file/d/10QVkAASBiafCaOqQtknzR1JErUon6110/view?usp=drive_link" target="_blank" id="resumeLink">Download Resume</a>
@@ -136,12 +242,11 @@
     <!-- Footer -->
     <footer>
         <p>
-            Connect with me: 
+            Connect with me:
             <a href="https://github.com/Aruna-1919" target="_blank">GitHub</a> |
             <a href="https://www.linkedin.com/in/aruna-bharathi-jadam-b56417247/" target="_blank">LinkedIn</a>
         </p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
