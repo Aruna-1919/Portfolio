@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,6 +106,13 @@
         footer a {
             color: #ffd32a;
             text-decoration: none;
+        }
+
+        /* LinkedIn Badge Styling */
+        .badge-base {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -221,29 +229,37 @@
         </div>
     </section>
 
-   <!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I’d love to connect with people.</p>
 
-  <p>
-    I’d love to connect with people.
-  </p>
+        <a href="https://aruna999.app.n8n.cloud/form/e373cd45-cd19-4dd5-a60b-69a35575898f"
+           target="_blank"
+           class="contact-link">
+           📩 Click here to connect with me
+        </a>
 
-  <a 
-    href="https://aruna999.app.n8n.cloud/form/e373cd45-cd19-4dd5-a60b-69a35575898f"
-    target="_blank"
-    class="contact-link"
-  >
-    📩 Click here to connect with me
-  </a>
-</section>
-
-    
+        <!-- LinkedIn Badge -->
+        <div class="badge-base LI-profile-badge" 
+             data-locale="en_US" 
+             data-size="medium" 
+             data-theme="dark" 
+             data-type="VERTICAL" 
+             data-vanity="aruna-bharathi-jadam-b56417247" 
+             data-version="v1">
+            <a class="badge-base__link LI-simple-link" 
+               href="https://in.linkedin.com/in/aruna-bharathi-jadam-b56417247?trk=profile-badge">
+               Aruna Bharathi Jadam
+            </a>
+        </div>
+    </section>
 
     <!-- Resume -->
     <section id="resume">
         <h2>My Resume</h2>
-        <a href="https://drive.google.com/file/d/1URAhxzad9uRVwghWy0YKcEkLzVS11R8f/view?usp=sharing" target="_blank" id="resumeLink">Download Resume</a>
+        <a href="https://drive.google.com/file/d/1URAhxzad9uRVwghWy0YKcEkLzVS11R8f/view?usp=sharing" 
+           target="_blank" id="resumeLink">Download Resume</a>
     </section>
 
     <!-- Footer -->
@@ -255,13 +271,8 @@
         </p>
     </footer>
 
+    <!-- LinkedIn Badge Script -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
