@@ -1,281 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aruna Bharathi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fa;
-        } 
-
-        header {
-            background: #0a3d62;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #ffd32a;
-        }
-
-        /* PHOTO */
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            position: absolute;
-            right: 40px;
-            top: 120px;
-            border: 4px solid #0a3d62;
-        }
-
-        section {
-            padding: 60px 80px;
-        }
-
-        h1, h2 {
-            color: #0a3d62;
-        }
-
-        .project-card, .experience-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        form input, form textarea {
-            width: 60%;
-            padding: 12px;
-            margin-top: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            display: block;
-        }
-
-        form button {
-            margin-top: 15px;
-            background: #0a3d62;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-        }
-
-        #resumeLink {
-            background: #0a3d62;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        footer {
-            background: #0a3d62;
-            padding: 15px;
-            color: white;
-            text-align: center;
-        }
-
-        footer a {
-            color: #ffd32a;
-            text-decoration: none;
-        }
-
-        /* LinkedIn Badge Styling */
-        .badge-base {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aruna Bharathi Jadam | Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #143729;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+    section {
+      padding: 40px 60px;
+      background: white;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #143729;
+      border-bottom: 2px solid #143729;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .contact a {
+      color: #143729;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #143729;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #ffd32a;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1>Aruna Bharathi Jadam</h1>
+    <p>Software Engineer | Java | Spring Boot | Azure Cloud | Integration Solutions</p>
+    <p class="contact">
+      <a href="mailto:arunajadham2021@gmail.com">arunajadham2021@gmail.com</a> | 
+      <a href="https://linkedin.com/in/aruna-bharathi-jadam-sde" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/Aruna-1919" target="_blank">GitHub</a>
+    </p>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm <b>Aruna Bharathi Jadam</b>, student of VR Siddhartha Engineering College and an AI-driven full stack developer.</p>
+  <!-- Professional Summary -->
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+      Software Engineer with experience in Java, Spring Boot, Azure Cloud, and Enterprise Integration solutions. Skilled in RESTful APIs, microservices, cloud-native applications, CI/CD pipelines, and event-driven architectures. Strong background in distributed systems, troubleshooting, and building scalable enterprise applications.
+    </p>
+  </section>
 
-        <!-- Your Photo -->
-        <img src="pic.jpg" class="profile-pic" alt="Profile Photo">
-    </section>
+  <!-- Technical Skills -->
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><b>Languages:</b> Java, Python, SQL, JavaScript, TypeScript</li>
+      <li><b>Backend:</b> Spring Boot, Spring Security, REST APIs, Microservices</li>
+      <li><b>Frontend:</b> Angular, HTML5, CSS3, Bootstrap</li>
+      <li><b>Cloud:</b> Azure Logic Apps, APIM, Service Bus, Event Grid, Key Vault</li>
+      <li><b>DevOps:</b> Docker, Kubernetes, AKS, Azure DevOps, Git, CI/CD</li>
+      <li><b>Databases:</b> MySQL, Azure Table Storage, SQL</li>
+    </ul>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>
-            I am an AI enthusiast and self-driven learner, passionate about technology and innovation.  
-            Skilled in Python, Java, Angular, Spring Boot, and Machine Learning.  
-            I actively participate in hackathons like Centuriton, ML Hackathon, and SIH, which shaped my problem-solving mindset.
-        </p>
-    </section>
+  <!-- Certifications -->
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Pega Certified System Architect (CSA)</li>
+      <li>Workato Automation Pro I & II</li>
+      <li>Boomi Associate & Professional Integration Developer</li>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+    </ul>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    <h3>Software Engineer — LTIMindtree (Aug 2025 – Present)</h3>
+    <ul>
+      <li>Developed enterprise integration workflows using Azure Logic Apps.</li>
+      <li>Designed RESTful API integrations between Oracle Fusion, SAP, and internal systems.</li>
+      <li>Implemented asynchronous messaging with Azure Service Bus and event-driven workflows with Event Grid.</li>
+      <li>Integrated Azure API Management for governance, routing, and monitoring.</li>
+      <li>Collaborated with cross-functional teams using Agile methodologies.</li>
+    </ul>
+  </section>
 
-        <div class="project-card">
-            <h3>Movie Booking System — Angular + Spring Boot + MySQL</h3>
-            <ul>
-                <li>Built a full-stack movie ticket booking application.</li>
-                <li>Implemented Spring Security with role-based access (User/Admin).</li>
-                <li>Designed movie listing, seat selection, booking history, admin CRUD.</li>
-            </ul>
-        </div>
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <h3>Enterprise Event-Driven Integration Platform</h3>
+    <ul>
+      <li>Built scalable integration workflows using Azure APIM, Logic Apps, and Service Bus.</li>
+      <li>Implemented Producer-Consumer architecture and persistent storage with Azure Table Storage.</li>
+      <li>Containerized services with Docker and deployed on AKS.</li>
+    </ul>
 
-        <div class="project-card">
-            <h3>Deepfake Detection Using EfficientNetB0 + LSTM</h3>
-            <ul>
-                <li>Achieved 99.94% accuracy on 10,000+ video frames.</li>
-                <li>Used Python, TensorFlow, NumPy, Pandas.</li>
-            </ul>
-        </div>
+    <h3>Cloud-Native E-Commerce Platform Deployment</h3>
+    <ul>
+      <li>Designed microservices architecture with Spring Boot.</li>
+      <li>Deployed workloads on AKS with CI/CD pipelines in Azure DevOps.</li>
+      <li>Implemented Kubernetes-based deployment strategies for scalability.</li>
+    </ul>
 
-        <div class="project-card">
-            <h3>Crop Disease Detection Using ResNet</h3>
-            <ul>
-                <li>Trained on 50,000+ agricultural images.</li>
-                <li>Used Keras & TensorFlow.</li>
-            </ul>
-        </div>
-    </section>
+    <h3>Movie Booking System</h3>
+    <ul>
+      <li>Developed full-stack booking platform using Spring Boot and Angular.</li>
+      <li>Implemented role-based authentication with Spring Security.</li>
+      <li>Optimized database interactions with Hibernate and MySQL.</li>
+    </ul>
+  </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>My Experience</h2>
-
-        <div class="experience-card">
-            <h3>Technology Trainee — Java Full Stack & Agentic AI</h3>
-            <h4>LTIMindtree | January 2025 – Present</h4>
-            <ul>
-                <li>Trained in Core Java, JS, TypeScript, Angular, Spring Boot.</li>
-                <li>Built agentic AI workflows using Python.</li>
-                <li>Implemented Spring Security & REST APIs.</li>
-            </ul>
-        </div>
-
-        <div class="experience-card">
-            <h3>Full Stack Web Development Intern</h3>
-            <h4>INNOVATE INTERN | Jan 2025 – Apr 2025</h4>
-            <ul>
-                <li>Developed dashboards for Students, Faculty, Admin using Flask.</li>
-                <li>Designed announcements & event modules using Bootstrap + MySQL.</li>
-            </ul>
-        </div>
-
-        <div class="experience-card">
-            <h3>Amazon ML Summer School</h3>
-            <h4>Amazon | July – Aug 2024</h4>
-            <ul>
-                <li>Hands-on ML algorithms and model optimization.</li>
-            </ul>
-        </div>
-
-        <div class="experience-card">
-            <h3>Salesforce Developer Intern</h3>
-            <h4>Nov 2023 – Jan 2024</h4>
-            <ul>
-                <li>Worked on Apex, Visualforce, CRM automation.</li>
-            </ul>
-        </div>
-
-        <div class="experience-card">
-            <h3>Artificial Intelligence Intern</h3>
-            <h4>IBM SkillBuild | June – Aug 2023</h4>
-            <ul>
-                <li>Developed an AI-based Mental Fitness Tracker.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>I’d love to connect with people.</p>
-
-        <a href="https://aruna999.app.n8n.cloud/form/e373cd45-cd19-4dd5-a60b-69a35575898f"
-           target="_blank"
-           class="contact-link">
-           📩 Click here to connect with me
-        </a>
-     <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="aruna-bharathi-jadam-b56417247" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/aruna-bharathi-jadam-b56417247?trk=profile-badge">Aruna Bharathi Jadam</a></div> -->
-              
-        <!-- LinkedIn Badge -->
-        <!-- <div class="badge-base LI-profile-badge" 
-             data-locale="en_US" 
-             data-size="medium" 
-             data-theme="dark" 
-             data-type="VERTICAL" 
-             data-vanity="aruna-bharathi-jadam-b56417247" 
-             data-version="v1">
-            <a class="badge-base__link LI-simple-link" 
-               href="https://in.linkedin.com/in/aruna-bharathi-jadam-b56417247?trk=profile-badge">
-               Aruna Bharathi Jadam
-            </a>
-        </div> -->
-    </section>
-
-    <!-- Resume -->
-    <section id="resume">
-        <h2>My Resume</h2>
-        <a href="https://drive.google.com/file/d/1URAhxzad9uRVwghWy0YKcEkLzVS11R8f/view?usp=sharing" 
-           target="_blank" id="resumeLink">Download Resume</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>
-            Connect with me:
-            <a href="https://github.com/Aruna-1919" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/aruna-bharathi-jadam-b56417247/" target="_blank">LinkedIn</a>
-        </p>
-    </footer>
-
-    <!-- LinkedIn Badge Script -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <!-- Footer -->
+  <footer>
+    <p>
+      Connect with me: 
+      <a href="https://github.com/Aruna-1919" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/aruna-bharathi-jadam-sde" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 
 </body>
 </html>
-
-
